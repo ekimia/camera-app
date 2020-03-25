@@ -13,6 +13,9 @@
 		<br>
 		<input type="button" value="Pretend it errored with a 500" onClick="processResponse('500')" />
 		<script type="text/javascript">
+			function setToken(token) {
+				console.log('received token:' + token)
+			}
 			function processResponse(responseCode) {
 				if (responseCode == 200) {
 					console.log('success')
